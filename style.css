@@ -1,0 +1,257 @@
+   /* Css Reset  */
+   * {
+	margin: 0px;
+	padding: 0px;
+  }
+  html{
+	scroll-behavior: smooth;
+  }
+  /* CSS Variables  */
+  :root {
+	--navbar-height: 59px;
+  }
+  body{
+	background-color: black;
+	color: white;
+  }
+  /* Navigation Bar  */
+  #navbar {
+	position: sticky;
+	top: 0px;
+	display: flex;
+	align-items: center;
+  }
+  #navbar::before {
+	content: "";
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.4;
+  }
+  /*  Navigation Bar:Logo and image  */
+  #logo {
+	margin: 10px 34px;
+	cursor: pointer;
+  }
+  #logo img {
+	height: 59px;
+	margin: 3px 6px;
+  }
+  /* Navigation Bar: List Styling  */
+  #navbar ul {
+	display: flex;
+  }
+  #navbar ul li {
+	/* color: white ; */
+	list-style: none;
+	font-size: 1.3rem;
+  }
+  #navbar ul li a {
+	color: white;
+	display: block;
+	padding: 5px 16px;
+	margin: 10px;
+	border-radius: 20px;
+	text-decoration: none;
+	background-color: rgb(17, 143, 17);
+  }
+  
+  #navbar ul li a:hover {
+	color: black;
+	background-color: white;
+  }
+  /* Navbar style done  */
+  
+  /* Now Home Section  */
+  #home {
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	height: 550px;
+	justify-content: center;
+	align-items: center;
+  }
+  .redcolor{
+	  color: red;
+  }
+  #home::before {
+	content: "";
+	background: url("homebg.jpeg") no-repeat center center/cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 644px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.4; 
+  }
+  
+  
+  #home h1 {
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+  }
+  #home p {
+	color: white;
+  } 
+  /* home end  */
+  /* now converter  */
+  .h1{
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-top: 20px;
+	  border: 3px solid white;
+	  width: 10em;
+	  text-align: center;
+	  background-color:rgb(148, 14, 14);
+	  cursor: pointer;
+	  border-radius: 20px;
+  }
+  .h1:hover{
+	  background-color: rgb(66, 3, 3);
+  }
+  .convert{
+	  margin-top: 70px;
+	/* border: 3px solid red; */
+	height: 360px;
+  
+  }
+  .convert::before{
+	  content: "";
+	background: url("homebg.jpeg") no-repeat center center/cover;
+	position: absolute;
+	height: 350px;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.4; 
+  }
+  .cal{
+	  display: flex;
+	  align-items: center;
+  text-align: center;
+  }
+  .SgpaToPer{
+	  
+	  width: 30rem;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding-left: 110px;
+	  height: 350px;
+	  
+  }
+  .form-group{
+	  margin-top: 10px;
+	  width: 100%;
+  }
+  .form-group input , 
+  .form-group textarea {
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 9px;
+	font-size: 1.1rem;
+  }
+  
+  .btn-success {
+	margin-top: 25px;
+	width: 50%;
+	padding: 0.5rem;
+	background-color: blue;
+	color: white;
+	border-radius: 20px;
+	cursor: pointer;
+  }
+  .btn-success:hover{
+	  background-color: rgb(63, 63, 240);
+  }
+  /* Services section  */
+  #services {
+	margin: 34px;
+	display: flex;
+	/* height: 600px; */
+	/* border: 2px solid red;  */
+  }
+  #services .box {
+	border: 2px solid brown;
+	padding: 34px;
+	margin: 2px 55px;
+	margin-bottom: 20px;
+	border-radius: 23px;
+	/* background: #f2f2f2;  */
+  }
+  #services .box img {
+	/* border: 2px solid brown;  */
+	height: 160px;
+	margin: auto;
+	display: block;
+  }
+  /* Contact us  */
+  .contact{
+	font-size: 1.2rem;
+	height: 570px;
+	padding-top: 20px;
+	/* border: 2px solid red;   */
+	position: relative;
+  }
+  #contact-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 34px;
+  }
+  #contact-box input , 
+  #contact-box textarea{
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 9px;
+	font-size: 1.1rem;
+  }
+  .from-group{
+	margin: 10px;
+  }
+  #contact-box form{
+	width: 40%;
+	
+  }
+  #contact-box label{
+	font-size: 1.3rem;
+  
+  }
+  .contact::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.7;
+	background: url('contact-us-4193523__340.webp') no-repeat center center/cover;
+  }
+  .submit{
+	  align-items: center;
+	  margin-top: 10px;
+	  margin-left: 140px;
+  }
+  footer{
+	background: black;
+	color: white;
+   padding-top: 6px; 
+  }
+  /* utility classes */
+  .h-primary {
+	font-size: 3.8rem;
+	padding: 12px;
+  }
+  .h-secondary {
+	font-size: 2.3rem;
+	padding: 12px;
+  }
+  .center {
+	text-align: center;
+  }
+  .text{
+	  margin-top: 10px;
+  }
