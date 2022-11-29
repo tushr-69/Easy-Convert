@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="icon" type="image/png" href="final_logologo.png" />
@@ -13,27 +13,27 @@
         <ul>
             <li class="item"><a href="#home">Home</a></li>
             <li class="item"><a href="#convert">Convert</a></li>
-			<li class="item"><a href="#services">Services</a></li>
-            <li class="item"><a href="#contact-box">Conctact Us</a></li>
+			<li class="item none"><a href="#services">Services</a></li>
+            <li class="item none"><a href="#contact-box">Conctact Us</a></li>
 			
            
         </ul>
     </nav>
 	<section id="home">
-		<h1 class="h-primary">Welcome to EasyConverter from tushr</h1> <br>
-		<p>Here is the useful SGPA to Percentage conversion calculator online for you to convert SGPA to Percentage with ease. Just enter the SGPA and submit to know the corresponding percentage.</p> <br><br>
-		<p><span class="redcolor"><b>SGPA</b></span>: SGPA (Semester Grade Point Average) is a grading system used in educational institutions worldwide, which is defined as the weighted mean of the grades achieved in various subjects by the students, wherein each subject is allocated with a particular credit acting as a weight for that subject. SGPA in various countries has slight modifications depending upon the respective educational systems.</p> <br> <br>
-
-		<p><span class="redcolor">	<b>How to Convert SGPA to Percentage?</b> </span>: It can be easily converted by just subtracting the 0.75 from SGPA and multiplying it the resultant with number 10.</p> <br> <br>
+		<h1 class="h-primary none">Welcome to EasyConverter</h1> <br>
+		<p class="none">Here is the useful SGPA to Percentage conversion calculator online for you to convert SGPA to Percentage with ease. Just enter the SGPA and submit to know the corresponding percentage.</p> <br><br>
+		<p class="none"><span class="redcolor none"><b>SGPA</b></span>: SGPA (Semester Grade Point Average) is a grading system used in educational institutions worldwide, which is defined as the weighted mean of the grades achieved in various subjects by the students, wherein each subject is allocated with a particular credit acting as a weight for that subject. SGPA in various countries has slight modifications depending upon the respective educational systems.</p> <br> <br>
+        <div class="padding">
+		<p><span class="redcolor ">	<b>How to Convert SGPA to Percentage?</b> </span>: It can be easily converted by just subtracting the 0.75 from SGPA and multiplying it the resultant with number 10.</p> <br> <br></div>
 			
-		<p>	<span class="redcolor"><b>SGPA To Percentage Conversion Calculator</b></span>: Feel free to make use of this online SGPA to percentage calculator to convert SGPA into a percentage in a simple way within fractions of seconds.</p> <br><br><br>
-		<button class="btn" id="convert"><a href="#convert">Convert Now</a></button>
+		<p class="none">	<span class="redcolor"><b>SGPA To Percentage Conversion Calculator</b></span>: Feel free to make use of this online SGPA to percentage calculator to convert SGPA into a percentage in a simple way within fractions of seconds.</p> <br><br><br>
+		<button class="btn none" id="convert"><a href="#convert">Convert Now</a></button>
 	</section>
-	<h1 class="h1"> Converter</h1> 
+	<h1 class="h1 none"> Converter</h1> 
 	<section class="convert" id="convert" >
 		<div class="cal">
 				<span><div class="SgpaToPer" id="sgpaToPer" >
-					<h2 class="h1">SGPA to Percent</h2> <br> <br>
+					<h2 class="h1 padding-5">SGPA to Percent</h2> <br> <br>
 					<div class="form-group">
 						<input type="number" id="sgpa" placeholder="Enter SGPA here" class="form-control"/>
 					</div>
@@ -44,7 +44,7 @@
 				</div> 
 			</span>
 				<div class="PerToSgpa SgpaToPer">
-					<h2 class="h1">Percent To SGPA</h2> <br> <br>
+					<h2 class="h1 padding-5">Percent To SGPA</h2> <br> <br>
 					<div class="form-group">
 						<input type="number" id="Percent2" placeholder="Enter Percent here" class="form-control"/>
 					</div>
@@ -57,11 +57,11 @@
 		</div>
 	</section>
 	<section id="services-container">
-		<h1 class="h-primary center">Our Services</h1>
+		<h1 class="h-primary center services" >Our Services</h1>
 		<div id="services">
 			<div class="box">
 				<img src="webdev.jpg" alt="">
-				<h2 class="h-secondary center">Web Development</h2>
+				<h2 class="h-secondary center ">Web Development</h2>
 				<p class="center text">We Can make user-friendly website for client with having great Responsive-ness</p>
 			</div>
 			<div class="box">
@@ -108,7 +108,7 @@
 	</section>
 	
 	<footer>
-		<div class="center">
+		<div class="center footer">
 			Copyright &copy;www.EasyConvert.com. All rights reserved 
 		</div>
 	</footer>
