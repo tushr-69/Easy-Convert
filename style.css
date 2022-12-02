@@ -300,7 +300,7 @@
 		background: black;
 	}
 	.footer{
-		margin-top: 450px;
+		margin-top: 90%;
 	}
 	#navbar ul li a {
 		
@@ -335,6 +335,7 @@
 		box-shadow:  3px 3px green , inset 3px 3px red;
 		padding: 50px;
 		margin-top: 50px;
+		margin-bottom: 50%;
 	}
 	.h1{
 		margin-left: -15px;
